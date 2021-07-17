@@ -41,14 +41,7 @@ main {
   padding: 3rem;
   border-radius: 1.5rem;
   color: #000000;
-  background: linear-gradient(
-    -90deg,
-    #ee7752,
-    #e73c7e,
-    #23a6d5,
-    #23d5ab,
-    #ee7752
-  );
+  background: linear-gradient(-90deg, #e73c7e, #23a6d5, #23d5ab);
   @media (min-width: 600px) {
   }
 }
@@ -136,16 +129,15 @@ main {
 
 footer {
   color: white;
-  margin: 3rem 5rem 5rem;
-  padding: 3rem;
+
   border-radius: 1.5rem;
-  background: -webkit-linear-gradient(#292929, rgb(61, 61, 61));
   color: #fcfcfc;
 }
 
 h2 {
+  padding: 5rem;
+  margin: 0 10rem 0 10rem;
   text-align: center;
-  justify-content: center;
   align-items: center;
   font-size: 2.5rem;
 }
