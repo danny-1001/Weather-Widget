@@ -1,98 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Permanent+Marker&family=Righteous&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles/styles.css" />
     <title>Weather Widget</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./main.css">
   </head>
-  <header>
-      <h2> Search For A City</h2>
-  </header>
   <body>
+    <header>
+      <h1 class="header-one">Weather Widget</h1>
+    </header>
 
-      <main class="container">
-        <div class="col-md-6 offset-md-3">
-
-            <form id="weather_form">
+    <main class="container">
+      <h1 id="header-two">Search For a City</h1>
+      <div class="col-md-6 offset-md-3">
+        <form id="weather_form">
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  id="city_search"
+                  class="form-control"
+                  placeholder="City name"
+                />
+              </div>
+              <div class="col-md-6">
                 <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input type="text" id="city_search" class="form-control" placeholder="City name" />
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <select class="form-control" id="temp_search">
-                                    <option disabled selected>Choose a weather unit</option>
-                                    <option value='kelvin'>Kelvin (K)</option>
-                                    <option value='celcius'>Celcius (C&deg;)</option>
-                                    <option value='fahrenheit'>Fahrenheit (F&deg;)</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <input class="btn btn-outline-info btn-block " type="submit" style="border-radius: 25px; background-color: rgb(85, 187, 187); color: white;" value="Submit" />
-                        </div>
-                    </div>
+                  <select class="form-control" id="temp_search">
+                    <option disabled selected>Choose a weather unit</option>
+                    <option value="celcius">Celcius (C&deg;)</option>
+                    <option value="fahrenheit">Fahrenheit (F&deg;)</option>
+                  </select>
                 </div>
-            </form>
-
-            <hr />
-
-            <div class="card">
-
-                <div class="card-body">
-                    <h5 class="card-title">
-                        Current Temp:
-                        <span id='temp_current' class="float-right"></span>
-                    </h5>
-                    
-                    <h5 class="card-title">
-                        Feels Like:
-                        <span id='temp_real' class="float-right"></span>
-                    </h5>
-                    
-                    <h5 class="card-title">
-                        Low Temp:
-                        <span id='temp_low' class="float-right"></span>
-                    </h5>
-                    
-                    <h5 class="card-title">
-                        High Temp:
-                        <span id='temp_high' class="float-right"></span>
-                    </h5>
-                    
-                    <h5 class="card-title">
-                        Current Conditions:
-                        <span id='conditions_current' class="float-right"></span>
-                    </h5>
-                    
-                    <h5 class="card-title">
-                        Forecast:
-                        <span id='conditions_forecast' class="float-right"></span>
-                    </h5>
-                    
-                    <h5 class="card-title">
-                        Wind:
-                        <span id='wind' class="float-right"></span>
-                    </h5>
-                    
-                </div>
+              </div>
+              <div class="col-md-12">
+                <input
+                  id="submit-btn"
+                  class="btn btn-outline-info btn-block"
+                  type="submit"
+                  value="Submit"
+                />
+              </div>
             </div>
+          </div>
+        </form>
+
+        <hr />
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">
+              Current Temp:
+              <span id="temp_current" class="float-right"></span>
+            </h5>
+
+            <h5 class="card-title">
+              Feels Like:
+              <span id="temp_real" class="float-right" class="output"></span>
+            </h5>
+
+            <h5 class="card-title">
+              Low Temp:
+              <span id="temp_low" class="float-right"></span>
+            </h5>
+
+            <h5 class="card-title">
+              High Temp:
+              <span id="temp_high" class="float-right"></span>
+            </h5>
+
+            <h5 class="card-title">
+              Current Conditions:
+              <span id="conditions_current" class="float-right"></span>
+            </h5>
+
+            <h5 class="card-title">
+              Forecast:
+              <span id="conditions_forecast" class="float-right"></span>
+            </h5>
+
+            <h5 class="card-title">
+              Wind:
+              <span id="wind" class="float-right"></span>
+            </h5>
+          </div>
         </div>
-      </main>
+      </div>
+    </main>
 
-      <footer>
-
-      </footer>
+    <footer>
+      <h2>
+        Thanks for checking out the weather widget, if you want to see more, you
+        can go directly to my <a href="">Linkedin</a> and my <a href="">Github</a>. Thank you!
+      </h2>
       
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="./app.js"></script>
+
+    <!-- <script src="/index.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

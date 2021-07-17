@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: rgb(36, 35, 35);
+}
+
+.header-one {
+  text-align: center;
+  align-items: center;
+  font-size: 5rem;
+  margin: 5rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  position: relative;
+  color: white;
+  font-family: "Permanent Marker", cursive;
+}
+
+#header-two {
+  position: relative;
+  font-size: 4rem;
+  text-align: center;
+  align-items: center;
+  margin: 5rem;
+  padding: 1rem;
+  width: 90%;
+  border-radius: 50rem;
+  font-family: "Permanent Marker", cursive;
+}
+
+main {
+  margin: 1rem;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(
+    -90deg,
+    #ee7752,
+    #e73c7e,
+    #23a6d5,
+    #23d5ab,
+    #ee7752
+  );
+  color: #000000;
+}
+
+.form-control {
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+}
+.card {
+  color: #000000;
+  margin: 2rem;
+  background: -webkit-linear-gradient(#eee, rgb(116, 116, 116));
+  border-radius: 1.5rem;
+  box-shadow: 0 0 0.5rem 0.1rem;
+}
+.card-title {
+  font-size: 2.5rem;
+  font-family: "Patrick Hand", cursive;
+}
+
+#submit-btn {
+  border-radius: 1.5rem;
+  font-size: 2rem;
+  color: rgb(255, 253, 253);
+  font-family: "Permanent Marker", cursive;
+}
+.btn {
+  position: relative;
+  background: linear-gradient(
+    -90deg,
+    #ee7752,
+    #e73c7e,
+    #23a6d5,
+    #23d5ab,
+    #ee7752
+  );
+  background-size: 400% 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.25em;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 0;
+  margin: 0;
+  animation: Gradient 4s ease infinite;
+  text-decoration: none;
+}
+
+.btn div {
+  color: black;
+  min-height: 40px;
+  padding: 0 1.618em;
+  border-radius: inherit;
+  background-size: inherit;
+  background-image: inherit;
+  animation: Gradient 4s ease infinite;
+  position: relative;
+  z-index: 1;
+  mix-blend-mode: overlay;
+  font-family: "Helvetica Neue";
+}
+
+@keyframes Gradient {
+  50% {
+    background-position: 140% 50%;
+    transform: skew(-2deg);
+  }
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  background-size: inherit;
+  background-image: inherit;
+  animation: inherit;
+  left: 0px;
+  right: 0px;
+  top: 2px;
+  height: 100%;
+  filter: blur(1rem);
+}
+
+footer {
+  background-color: violet;
+  color: white;
+  margin: 0 5rem 5rem;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  background: -webkit-linear-gradient(#292929, rgb(61, 61, 61));
+  color: #fcfcfc;
+}
+
+h2 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+}
