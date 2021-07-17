@@ -7,6 +7,7 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   background-color: rgb(36, 35, 35);
 }
@@ -24,12 +25,12 @@ body {
 }
 
 #header-two {
-  position: relative;
   font-size: 4rem;
   text-align: center;
   align-items: center;
+  justify-content: center;
   margin: 5rem;
-  padding: 1rem;
+  padding: 0 10rem 0 5rem;
   width: 90%;
   border-radius: 50rem;
   font-family: "Permanent Marker", cursive;
@@ -39,6 +40,7 @@ main {
   margin: 1rem;
   padding: 3rem;
   border-radius: 1.5rem;
+  color: #000000;
   background: linear-gradient(
     -90deg,
     #ee7752,
@@ -47,12 +49,15 @@ main {
     #23d5ab,
     #ee7752
   );
-  color: #000000;
+  @media (min-width: 600px) {
+  }
 }
 
 .form-control {
   margin-bottom: 2.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  border-radius: 1.5rem;
+  font-family: "Patrick Hand", cursive;
 }
 .card {
   color: #000000;
@@ -67,7 +72,7 @@ main {
 }
 
 #submit-btn {
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   font-size: 2rem;
   color: rgb(255, 253, 253);
   font-family: "Permanent Marker", cursive;
@@ -130,9 +135,8 @@ main {
 }
 
 footer {
-  background-color: violet;
   color: white;
-  margin: 0 5rem 5rem;
+  margin: 3rem 5rem 5rem;
   padding: 3rem;
   border-radius: 1.5rem;
   background: -webkit-linear-gradient(#292929, rgb(61, 61, 61));
