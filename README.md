@@ -2,18 +2,18 @@
 Improved version of weather widget assignment
 
 #Technologies used:
--HTML5
--Bootstrap
--SCSS / CSS
--JavaScript
--jQuery
+-HTML5.
+-Bootstrap.
+-SCSS / CSS.
+-JavaScript.
+-jQuery.
 
 #Implementation:
 -I used HTML to form the layout of the weather widget app like
 where the api information was going to be displayed and in what containers.
 
 -I used JavaScript and jQuery to fetch the Weather Map api data and display it in the 
-container
+container.
 
 -I used Bootstrap to give the layout columns and rows as well as styling 
 certain elements of the submit button.
