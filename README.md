@@ -2,11 +2,7 @@
 Improved version of weather widget assignment
 
 #Technologies used:
--HTML5.
--Bootstrap.
--SCSS / CSS.
--JavaScript.
--jQuery.
+HTML5,Bootstrap, SCSS / CSS, JavaScript, jQuery.
 
 #Implementation:
 -I used HTML to form the layout of the weather widget app like
