@@ -13,6 +13,13 @@ body {
   background-color: #242323;
 }
 
+@media screen and (max-width: 585px) {
+  body {
+    background: -webkit-gradient(linear, right top, left top, from(#23d5ab), to(#23a6d5));
+    background: linear-gradient(-90deg, #23d5ab, #23a6d5);
+  }
+}
+
 .header-one {
   text-align: center;
   -webkit-box-align: center;
@@ -25,6 +32,29 @@ body {
   position: relative;
   color: white;
   font-family: "Permanent Marker", cursive;
+}
+
+@media screen and (max-width: 585px) {
+  .header-one {
+    display: none;
+  }
+}
+
+main {
+  margin: 1rem;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  color: #000000;
+  background: -webkit-gradient(linear, right top, left top, from(#23d5ab), to(#23a6d5));
+  background: linear-gradient(-90deg, #23d5ab, #23a6d5);
+}
+
+@media screen and (max-width: 585px) {
+  main {
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem 0 2rem;
+  }
 }
 
 #header-two {
@@ -41,15 +71,6 @@ body {
   width: 90%;
   border-radius: 50rem;
   font-family: "Permanent Marker", cursive;
-}
-
-main {
-  margin: 1rem;
-  padding: 3rem;
-  border-radius: 1.5rem;
-  color: #000000;
-  background: -webkit-gradient(linear, right top, left top, from(#e73c7e), color-stop(#23a6d5), to(#23d5ab));
-  background: linear-gradient(-90deg, #e73c7e, #23a6d5, #23d5ab);
 }
 
 .form-control {
@@ -76,7 +97,7 @@ main {
 #submit-btn {
   border-radius: 1rem;
   font-size: 2rem;
-  color: #fffdfd;
+  color: #0e0e0e;
   font-family: "Permanent Marker", cursive;
 }
 
@@ -93,8 +114,8 @@ main {
   letter-spacing: 1px;
   padding: 0;
   margin: 0;
-  -webkit-animation: Gradient 4s ease infinite;
-          animation: Gradient 4s ease infinite;
+  -webkit-animation: Gradient 5s ease infinite;
+          animation: Gradient 5s ease infinite;
   text-decoration: none;
 }
 
@@ -147,16 +168,51 @@ main {
 footer {
   color: white;
   border-radius: 1.5rem;
-  color: #fcfcfc;
 }
 
-h2 {
-  padding: 5rem;
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer .footer-h2 {
+  padding: 2rem;
   margin: 0 10rem 0 10rem;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 585px) {
+  footer .footer-h2 {
+    padding: 2.5rem;
+    margin: 0 5rem 0 5rem;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 2.5rem;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 585px) and (max-width: 400px) {
+  footer .footer-h2 {
+    display: -ms-grid;
+    display: grid;
+    padding: 0 5rem 2rem 5rem;
+    margin: 0 5rem 2rem 5rem;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 2.5rem;
+    color: black;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
