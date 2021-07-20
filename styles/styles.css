@@ -170,11 +170,6 @@ footer {
   border-radius: 1.5rem;
 }
 
-footer a {
-  color: white;
-  text-decoration: underline;
-}
-
 footer .footer-h2 {
   padding: 2rem;
   margin: 0 10rem 0 10rem;
@@ -196,6 +191,10 @@ footer .footer-h2 {
     font-size: 2.5rem;
     color: black;
   }
+  footer .footer-h2 a {
+    color: white;
+    text-decoration: underline;
+  }
 }
 
 @media screen and (max-width: 585px) and (max-width: 400px) {
@@ -213,6 +212,10 @@ footer .footer-h2 {
             justify-content: center;
     font-size: 2.5rem;
     color: black;
+  }
+  footer .footer-h2 a {
+    color: white;
+    text-decoration: underline;
   }
 }
 /*# sourceMappingURL=styles.css.map */
