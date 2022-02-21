@@ -8,7 +8,6 @@ let conditions_current = $("#conditions_current");
 let conditions_forecast = $("#conditions_forecast");
 let wind = $("#wind");
 let city_name = $("#city_name");
-
 let city_search = $("#city_search");
 let temp_search = $("#temp_search");
 

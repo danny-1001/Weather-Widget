@@ -10,55 +10,42 @@ html {
 }
 
 body {
-  background-color: #242323;
+  background: #7a3493;
+  background: radial-gradient(circle, #7a3493 0%, #45c8ed 50%, #474ed7 100%);
 }
 
-@media screen and (max-width: 585px) {
-  body {
-    background: -webkit-gradient(linear, right top, left top, from(#23d5ab), to(#23a6d5));
-    background: linear-gradient(-90deg, #23d5ab, #23a6d5);
-  }
-}
-
-.header-one {
+body .header-one {
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Quicksand";
+  font-weight: bolder;
   font-size: 5rem;
   margin: 5rem;
   padding: 2rem;
   border-radius: 1.5rem;
   position: relative;
   color: white;
-  font-family: "Permanent Marker", cursive;
 }
 
-@media screen and (max-width: 585px) {
-  .header-one {
-    display: none;
-  }
-}
-
-main {
+body main {
   margin: 1rem;
   padding: 3rem;
   border-radius: 1.5rem;
   color: #000000;
-  background: -webkit-gradient(linear, right top, left top, from(#23d5ab), to(#23a6d5));
-  background: linear-gradient(-90deg, #23d5ab, #23a6d5);
+  -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+  font-family: "Quicksand";
 }
 
-@media screen and (max-width: 585px) {
-  main {
-    width: 100%;
-    height: 100%;
-    padding: 0 2rem 0 2rem;
-  }
-}
-
-#header-two {
+body .search {
   font-size: 4rem;
+  font-weight: bolder;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -70,152 +57,89 @@ main {
   padding: 0 10rem 0 5rem;
   width: 90%;
   border-radius: 50rem;
-  font-family: "Permanent Marker", cursive;
 }
 
-.form-control {
+body .form-control {
   margin-bottom: 2.5rem;
   font-size: 2rem;
   border-radius: 1.5rem;
-  font-family: "Patrick Hand", cursive;
+  font-family: "Quicksand";
 }
 
-.card {
+body .card {
   color: #000000;
   margin: 2rem;
-  background: -webkit-linear-gradient(#eee, #747474);
+  background: -webkit-linear-gradient(#eee, rgba(116, 116, 116, 0.199));
   border-radius: 1.5rem;
   -webkit-box-shadow: 0 0 0.5rem 0.1rem;
           box-shadow: 0 0 0.5rem 0.1rem;
+  font-family: "Quicksand";
 }
 
-.card-title {
+body .card-title {
   font-size: 2.5rem;
-  font-family: "Patrick Hand", cursive;
+  font-family: "Quicksand";
 }
 
-#submit-btn {
+body #submit-btn {
   border-radius: 1rem;
   font-size: 2rem;
   color: #0e0e0e;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Quicksand";
 }
 
-.btn {
+body .btn {
   position: relative;
-  background: -webkit-gradient(linear, right top, left top, from(#ee7752), color-stop(#e73c7e), color-stop(#23a6d5), color-stop(#23d5ab), to(#ee7752));
-  background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #ee7752);
+  background: #7a3493;
   background-size: 400% 100%;
   text-transform: uppercase;
   font-weight: 700;
   border: none;
   border-radius: 0.25em;
-  font-size: 13px;
-  letter-spacing: 1px;
-  padding: 0;
-  margin: 0;
+  font-size: 1.3rem;
+  font-family: "Quicksand";
+  letter-spacing: 0.1rem;
   -webkit-animation: Gradient 5s ease infinite;
           animation: Gradient 5s ease infinite;
   text-decoration: none;
 }
 
-.btn div {
+body .btn div {
   color: black;
   min-height: 40px;
   padding: 0 1.618em;
-  border-radius: inherit;
-  background-size: inherit;
-  background-image: inherit;
-  -webkit-animation: Gradient 4s ease infinite;
-          animation: Gradient 4s ease infinite;
+  -webkit-animation: 4s ease infinite;
+          animation: 4s ease infinite;
   position: relative;
   z-index: 1;
   mix-blend-mode: overlay;
-  font-family: "Helvetica Neue";
 }
 
-@-webkit-keyframes Gradient {
-  50% {
-    background-position: 140% 50%;
-    -webkit-transform: skew(-2deg);
-            transform: skew(-2deg);
-  }
-}
-
-@keyframes Gradient {
-  50% {
-    background-position: 140% 50%;
-    -webkit-transform: skew(-2deg);
-            transform: skew(-2deg);
-  }
-}
-
-.btn::after {
+body .btn::after {
   content: "";
   position: absolute;
-  background-size: inherit;
-  background-image: inherit;
   -webkit-animation: inherit;
           animation: inherit;
-  left: 0px;
-  right: 0px;
-  top: 2px;
   height: 100%;
   -webkit-filter: blur(1rem);
           filter: blur(1rem);
 }
 
-footer {
+body footer {
   color: white;
-  border-radius: 1.5rem;
+  padding: 2rem 0 0 0;
 }
 
-footer .footer-h2 {
-  padding: 2rem;
-  margin: 0 10rem 0 10rem;
+body footer .footer-h2 {
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
-@media screen and (max-width: 585px) {
-  footer .footer-h2 {
-    padding: 2.5rem;
-    margin: 0 5rem 0 5rem;
-    text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 2.5rem;
-    color: black;
-  }
-  footer .footer-h2 a {
-    color: white;
-    text-decoration: underline;
-  }
-}
-
-@media screen and (max-width: 585px) and (max-width: 400px) {
-  footer .footer-h2 {
-    display: -ms-grid;
-    display: grid;
-    padding: 0 5rem 2rem 5rem;
-    margin: 0 5rem 2rem 5rem;
-    text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 2.5rem;
-    color: black;
-  }
-  footer .footer-h2 a {
-    color: white;
-    text-decoration: underline;
-  }
+body footer .footer-h2 a {
+  color: #7a3493;
+  font-weight: bold;
 }
 /*# sourceMappingURL=styles.css.map */
